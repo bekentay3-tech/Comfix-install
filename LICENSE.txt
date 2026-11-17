@@ -1,0 +1,22 @@
+Comfix Freeware License
+
+Copyright (c) 2026 Comfix
+
+Comfix is distributed free of charge as freeware.
+
+You may:
+- install and use Comfix for personal or commercial work;
+- share the original, unmodified installer free of charge.
+
+You may not:
+- sell Comfix or include it in a paid package without permission;
+- claim Comfix as your own product;
+- modify, reverse engineer, decompile, or disassemble Comfix;
+- distribute modified versions of Comfix;
+- remove product names, notices, or license information.
+
+The source code is proprietary and is not distributed with the application.
+
+Comfix is provided "as is", without warranty of any kind. The author is not responsible for data loss, broken ComfyUI installations, deleted files, failed updates, downloaded third-party content, or other damage caused by using the application.
+
+Comfix works with third-party software and services, including ComfyUI, ComfyUI-Manager, Git, Python, pip, and external repositories. These third-party components are subject to their own licenses and terms.
