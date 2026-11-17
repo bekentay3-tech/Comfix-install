@@ -1,85 +1,85 @@
 # Comfix
 
-Comfix - бесплатное desktop-приложение для Windows, которое помогает работать с локальной портативной установкой ComfyUI.
+Comfix is a free Windows desktop app for working with a local portable ComfyUI installation.
 
-Приложение сделано для пользователей, которым нужно быстро установить ComfyUI, запустить его, обновить, проверить установленные ноды и модели, а также проанализировать workflow-проект перед запуском.
+It is made for users who want to quickly install ComfyUI, launch it, update it, check installed nodes and models, and analyze a workflow project before running it.
 
-## Скачать
+## Download
 
-[Скачать последнюю версию](https://github.com/bekentay3-tech/Comfix-install/releases/latest) - файл `Comfix_..._x64-setup.exe` в разделе Assets.
+[Download the latest version](https://github.com/bekentay3-tech/Comfix-install/releases/latest) - the `Comfix_..._x64-setup.exe` file under Assets.
 
-## Возможности
+## Features
 
-- установка портативной сборки ComfyUI;
-- запуск и остановка ComfyUI из приложения;
-- проверка и установка обновлений ComfyUI и ComfyUI-Manager;
-- просмотр установленных custom nodes;
-- просмотр моделей в папке `models`;
-- аудит workflow JSON: Comfix показывает, какие ноды и модели уже есть локально, а каких не хватает;
-- установка найденных недостающих нод;
-- сохранение полезных нод в избранное.
+- install a portable ComfyUI build;
+- start and stop ComfyUI from the app;
+- check for and install ComfyUI and ComfyUI-Manager updates;
+- browse installed custom nodes;
+- browse models in the `models` folder;
+- workflow JSON audit: Comfix shows which nodes and models are already available locally and which are missing;
+- install the missing nodes it finds;
+- save useful nodes to favorites.
 
-## Требования
+## Requirements
 
-- Windows 10 или Windows 11 x64;
-- интернет для установки ComfyUI, загрузки Python, зависимостей, нод и моделей;
-- Git, если вы используете функции установки или обновления репозиториев;
-- достаточно свободного места на диске для ComfyUI, моделей и зависимостей.
+- Windows 10 or Windows 11 x64;
+- an internet connection to install ComfyUI and download Python, dependencies, nodes and models;
+- Git, if you use the features that install or update repositories;
+- enough free disk space for ComfyUI, models and dependencies.
 
-## Как установить
+## How to install
 
-1. Скачайте установщик `Comfix_..._x64-setup.exe` по ссылке выше.
+1. Download the `Comfix_..._x64-setup.exe` installer from the link above.
 
-2. Запустите установщик.
+2. Run the installer.
 
-3. Следуйте шагам установщика. Comfix устанавливается для текущего пользователя и не требует установки для всех пользователей Windows.
+3. Follow the installer steps. Comfix installs for the current user and does not need to be installed for all Windows users.
 
-4. После установки запустите Comfix через меню Пуск или ярлык, если он был создан установщиком.
+4. After installation, start Comfix from the Start menu or from the shortcut, if the installer created one.
 
-## Обновления
+## Updates
 
-Когда выходит новая версия, Comfix сам показывает сверху полосу «Вышла новая версия» с кнопкой «Обновить». Программа скачает обновление, установит его и перезапустится.
+When a new version is released, Comfix shows a bar at the top saying "A new version of Comfix is available" with an "Update" button. The app downloads the update, installs it and restarts.
 
-## Предупреждение Windows SmartScreen
+## Windows SmartScreen warning
 
-Установщик Comfix сейчас не имеет цифровой подписи.
+The Comfix installer is not digitally signed yet.
 
-Из-за этого Windows может показать предупреждение:
+Because of this, Windows may show a warning:
 
-- `Неизвестный издатель`;
-- `Windows защитила ваш компьютер`;
+- `Unknown publisher`;
+- `Windows protected your PC`;
 - `This app is from an unknown publisher`.
 
-Это не означает, что приложение платное или сломанное. Это означает только то, что установщик не подписан коммерческим code signing сертификатом.
+This does not mean the app is paid or broken. It only means the installer is not signed with a commercial code signing certificate.
 
-Если вы доверяете источнику, нажмите `Подробнее` -> `Выполнить в любом случае`.
+If you trust the source, click `More info` -> `Run anyway`.
 
-## Работа с ComfyUI
+## Working with ComfyUI
 
-Comfix сам не является ComfyUI и не заменяет ComfyUI. Он управляет локальной установкой ComfyUI:
+Comfix is not ComfyUI and does not replace it. It manages a local ComfyUI installation:
 
-- создает портативную структуру;
-- запускает `.bat`-файл ComfyUI;
-- проверяет локальные папки `custom_nodes` и `models`;
-- читает workflow JSON и сверяет его с локальными нодами и моделями;
-- вызывает Git/Python/pip для установки и обновления компонентов.
+- creates the portable folder structure;
+- runs the ComfyUI `.bat` file;
+- checks the local `custom_nodes` and `models` folders;
+- reads workflow JSON and compares it with local nodes and models;
+- calls Git/Python/pip to install and update components.
 
-Перед установкой, обновлением или удалением нод рекомендуется остановить ComfyUI.
+It is recommended to stop ComfyUI before installing, updating or removing nodes.
 
-## Данные приложения
+## App data
 
-Comfix хранит настройки, кэш и журналы в папке `ComfixData` рядом с установленным приложением.
+Comfix keeps its settings, cache and logs in the `ComfixData` folder next to the installed app.
 
-В приложении путь к данным можно посмотреть в разделе `Настройки`.
+You can see the data path in the app under `Settings`.
 
-## Ошибки и вопросы
+## Bugs and questions
 
-Нашли ошибку - напишите во вкладке [Issues](https://github.com/bekentay3-tech/Comfix-install/issues).
+Found a bug? Report it in the [Issues](https://github.com/bekentay3-tech/Comfix-install/issues) tab.
 
-## Лицензия
+## License
 
-Comfix распространяется бесплатно как freeware.
+Comfix is distributed free of charge as freeware.
 
-Исходный код закрыт и не распространяется. Разрешено бесплатно устанавливать и использовать Comfix. Запрещено продавать Comfix, выдавать его за свой продукт, модифицировать, декомпилировать или распространять измененные версии без разрешения автора.
+The source code is closed and is not distributed. You may install and use Comfix for free. You may not sell Comfix, present it as your own product, modify it, decompile it, or distribute modified versions without the author's permission.
 
-Полный текст условий находится в файле [LICENSE.txt](LICENSE.txt).
+The full terms are in [LICENSE.txt](LICENSE.txt).
